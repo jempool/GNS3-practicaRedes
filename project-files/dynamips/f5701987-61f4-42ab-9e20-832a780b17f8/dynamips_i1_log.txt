@@ -1,0 +1,44 @@
+Apr 17 07:02:20.958 HYPERVISOR: Release 0.2.18-amd64/Linux (tag 2018033112)
+Apr 17 07:02:20.958 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 45259.
+Apr 17 07:02:20.970 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 17 07:02:20.972 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jim/GNS3/projects/Demo_2019_I/project-files/dynamips 
+Apr 17 07:02:20.972 GENERAL: working_dir=/home/jim/GNS3/projects/Demo_2019_I/project-files/dynamips
+Apr 17 07:02:20.975 HYPERVISOR: exec_cmd: hypervisor working_dir /home/jim/GNS3/projects/Demo_2019_I/project-files/dynamips/2eba4528-2f20-46d1-81d7-b9f9113e6bf6 
+Apr 17 07:02:20.975 GENERAL: working_dir=/home/jim/GNS3/projects/Demo_2019_I/project-files/dynamips/2eba4528-2f20-46d1-81d7-b9f9113e6bf6
+Apr 17 07:02:20.975 HYPERVISOR: exec_cmd: vm create R4 4 c3725 
+Apr 17 07:02:20.976 VM: VM R4 created.
+Apr 17 07:02:20.977 HYPERVISOR: exec_cmd: vm set_con_tcp_port R4 5008 
+Apr 17 07:02:20.977 HYPERVISOR: exec_cmd: c3725 get_mac_addr R4 
+Apr 17 07:02:20.978 HYPERVISOR: exec_cmd: vm set_ram R4 256 
+Apr 17 07:02:20.979 HYPERVISOR: exec_cmd: vm set_disk0 R4 0 
+Apr 17 07:02:20.979 HYPERVISOR: exec_cmd: c3725 set_mac_addr R4 c204.188c.0000 
+Apr 17 07:02:20.980 HYPERVISOR: exec_cmd: vm set_nvram R4 256 
+Apr 17 07:02:21.023 HYPERVISOR: exec_cmd: vm set_ios R4 /home/jim/GNS3/images/IOS/c3725-adventerprisek9-mz124-15.bin 
+Apr 17 07:02:21.024 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:02:21.025 HYPERVISOR: exec_cmd: vm slot_add_binding R4 1 0 NM-1FE-TX 
+Apr 17 07:02:21.027 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:02:21.028 HYPERVISOR: exec_cmd: vm set_idle_pc R4 0x60bf8d58 
+Apr 17 07:02:22.087 HYPERVISOR: exec_cmd: nio create_udp udp-84c7cc80-63ff-4786-910d-3cca83afd8b3 10006 127.0.0.1 10007 
+Apr 17 07:02:22.311 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 0 udp-84c7cc80-63ff-4786-910d-3cca83afd8b3 
+Apr 17 07:02:22.312 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:02:23.991 HYPERVISOR: exec_cmd: nio create_udp udp-fbb09626-2481-44ea-9e8b-047ad7963eb4 10030 127.0.0.1 10031 
+Apr 17 07:02:23.994 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R4 0 1 udp-fbb09626-2481-44ea-9e8b-047ad7963eb4 
+Apr 17 07:02:23.995 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:02:57.194 HYPERVISOR: exec_cmd: vm set_ghost_status R4 2 
+Apr 17 07:02:57.196 HYPERVISOR: exec_cmd: vm set_ghost_file R4 /home/jim/GNS3/projects/Demo_2019_I/project-files/dynamips/c3725-adventerprisek9-mz124-15.bin-256.ghost 
+Apr 17 07:02:57.197 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:02:57.214 HYPERVISOR: exec_cmd: vm set_config R4 configs/i4_startup-config.cfg 
+Apr 17 07:02:57.216 HYPERVISOR: exec_cmd: vm start R4 
+Apr 17 07:03:57.488 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 17 07:03:57.506 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 17 07:17:03.706 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:17:03.707 HYPERVISOR: exec_cmd: vm stop R4 
+Apr 17 07:17:03.834 VM: VM R4 shutdown.
+Apr 17 07:17:03.835 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 17 07:17:04.818 HYPERVISOR: exec_cmd: vm get_status R4 
+Apr 17 07:17:04.818 HYPERVISOR: exec_cmd: vm extract_config R4 
+Apr 17 07:17:04.820 HYPERVISOR: exec_cmd: vm delete R4 
+Apr 17 07:17:04.820 VM: VM R4 destroyed.
+Apr 17 07:17:04.821 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 17 07:17:05.012 HYPERVISOR: Stopped.
+Apr 17 07:17:05.012 GENERAL: reset done.
